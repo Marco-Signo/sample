@@ -30,7 +30,7 @@ console.log("Minted: " + _name);
 // and print their metadata with console.log()
 function listNFTs () {
     for(i = 0; i < NFTs.length; i++){
-        console.log("ID: \t\t" + (i +1))
+        console.log("\nID: \t\t" + (i +1))
         console.log("Name: \t\t" + NFTs[i].name);
         console.log("Eye Color: \t" + NFTs[i].eyeColor);
         console.log("Shirt Type: " + NFTs[i].shirtType);
@@ -40,7 +40,7 @@ function listNFTs () {
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-console.log(NFTs.length);
+    return NFTs.length;
 }
 
 // call your functions below this line
@@ -49,4 +49,4 @@ mintNFT("Bob", "Black", "Hoodie", "SilverChain");
 mintNFT("Frank", "Black", "Hoodie", "SilverChain");
 mintNFT("Mark", "Black", "Hoodie", "SilverChain");
 listNFTs();
-getTotalSupply();
+console.log("\nTotal Supply: " + getTotalSupply());
